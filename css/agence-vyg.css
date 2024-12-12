@@ -1,0 +1,486 @@
+*{
+    box-sizing: border-box;
+    font-family: "work sans",sans-serif;
+}
+
+
+    
+.headerA {
+    padding: 20px;
+    margin-bottom: 0;
+ }
+.headerA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerA .logo{
+    height: 100px;
+    width: 100px;
+}
+.headerA .links{
+    display: flex;
+}
+.headerA .links ul li a {
+    display: block;
+    padding: 15px;
+}
+
+.landing{
+    background-image: url(../image/madrid.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.headerA .links .icon {
+    width: 30px;
+}
+
+
+.headerA .links .icon:hover .headerA  .links .icon span:nth-child(2) {
+    width: 100%;
+}
+.headerA .links .icon span {
+    display: block;
+    margin-bottom: 5px;
+    height: 2px;
+    background-color: #333;
+}
+
+.headerA .links .icon span:first-child {
+    width: 100%;
+}
+.headerA  .links .icon span:nth-child(2){
+    width: 60%;
+    transition: 0.3s;
+}
+
+.headerA .links .icon span:last-child {
+    width: 100%;
+}
+.headerA  .links .icon:hover span:nth-child(2){
+    width: 100%; 
+}
+.container  {
+    height: auto;
+    padding: 50px;
+
+}
+.container .feat {
+    
+    margin: 20px;
+}
+.container .feat svg{
+    color: steelblue ;
+}
+
+/* srtart landing section */
+.landing .intro-text {
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    width: 320px;
+    max-width: 100%;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.landing .intro-text h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 80px;
+    color: #FFFFFF;
+    text-align: center;
+    width: 100%;
+}
+.landing .intro-text p {
+    text-align: center;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 40px;
+    text-decoration: underline;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    grid-gap: 20px;
+    background-color: #ebeced;
+    
+}
+.feat {
+    padding: 20px;
+    text-align: center;
+}
+.feat h3 {
+    font-weight: 800;
+    margin: 30px 0;
+}
+.feat p {
+    line-height: 1.8;
+    color: #777;
+    font-size: 17px;
+}
+.offres .our, .offres .my_cards  {
+    margin-bottom: 80px;
+}
+.offres .our h1 {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    color: #ebeced;
+    margin-bottom: -15px;
+    letter-spacing: -5px;
+}
+.offres .our p {
+    text-align: center;
+    margin-top: -15px;
+    color: #777;
+    font-size: 20px;
+}
+.my_cards{
+    display: flex;
+    justify-content: space-around;
+}
+.my_cards .cards {
+    height: 350px;
+    width: 300px;
+    background-color: #ebeced;
+    margin: 15px;
+}
+.my_cards .cards:hover {
+    transform: translateY(10px);
+}
+
+.my_cards .cards img {
+    width: 100%;
+    height: 70%;
+}
+.my_cards .cards h3 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.my_cards .cards h3 svg {
+    color: steelblue;
+    margin-right: 5px;
+}
+.my_cards .cards p {
+    text-align: center;
+    color: #777;
+    
+}
+/*our distination*/
+.distinaions {
+    background-color: #f6f6f6;
+}
+
+.distinaions .our h1 {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    color: #ebeced;
+    margin-bottom: -15px;
+    letter-spacing: -5px;
+
+}
+.distinaions .our p {
+    text-align: center;
+    margin-top: -15px;
+    color: #777;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.my_cities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 80px;
+    padding-top: 30px;
+}
+.distinaions {
+    padding-top: 10px;
+}
+
+.distinaions .city {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    width: 48%;
+    background-color: #ebeced;
+    border-radius: 20px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+}
+.distinaions .city img {
+    height: 100%;
+    width: 40%;
+    border-radius: 20px 0 0  20px;
+}
+.distinaions .city span {
+    color: #333;
+    width: 30%;
+    text-align: center;
+}
+
+.distinaions .city p {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.distinaions .city p svg {
+    color: steelblue;
+    
+}
+.distinaions .city p button{ 
+    background-color: steelblue;
+    border: 1px solid #777;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px;
+    font-size: 15px;
+    color: #f6f6f6;
+}
+.distinaions .city p button:hover {
+    background-color: #333;
+}
+.distinaions .city p strong {
+    text-align: center;
+    font-size: 25px;
+}
+
+.distinaions .city hr {
+    margin: 0;
+}
+.hotels {
+    padding: 20px;
+    margin-bottom: 80px;
+}
+
+
+.hotels .title h1 {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+    color: #ebeced;
+    margin-bottom: -20px;
+    letter-spacing: -5px;
+
+}
+.hotels .title p {
+    text-align: center;
+    color: #777;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+.form{
+    background-color: steelblue;
+    padding: 30px;
+    border-radius: 30px;
+    margin: 80px;
+    text-align: center;
+}
+.hotels .form h3{
+    text-align: center;
+    margin: 10px;
+    /* font-weight: bold; */
+    font-size: 50px;
+    color: #f6f6f6;
+    
+}
+.hotels .form h4 {
+    text-align: center;
+    margin: 10px;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    word-spacing: 7px;
+    
+}
+.hotels .form label{
+    color: #FFFFFF;
+}
+
+    
+.hotels .form select{
+    margin: 30px;
+    width: 300px;
+    border-radius: 6px;
+    border: 1px solid;
+  
+}
+.hotels .form button{
+    text-align: end;
+    color: #ebeced;
+    background-color: #777;
+    font-size: 15px;
+    margin: 15px;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+.hotels .form #date-s, #date-e{
+    margin: 30px 30px 30px 0;
+    border-radius: 6px;
+}
+
+.hotels .form #room {
+    
+    border-radius: 6px;
+}
+
+.hotels .form #adult{
+    margin: 20px 0 20px;
+    border-radius: 6px;
+}
+
+.hotels .form #children{
+    border-radius: 6px;
+}
+
+
+
+/*start contact*/
+.contact {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+.contact h1{
+    color: #ebeced;
+    text-align: center;
+    font-weight: bold;
+    font-size: 80Px;
+    margin-bottom: -10px;
+}
+.contact p{
+    color: #777;
+    text-align: center;
+    margin-top: -9px;
+}
+.contact .info {
+    margin: 100px 0;
+    text-align: center;
+}
+.contact .info .label {
+    font-size: 35px;
+    font-weight: 800;
+    color: steelblue;
+    letter-spacing: -2px;
+    margin-bottom: 15px;
+}
+.contact .info .link {
+    display: block;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 800;
+    color: #777;
+}
+.contact .info .social {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.contact .info svg {
+    margin: 0 10px ;
+    color: steelblue;
+}
+
+
+/*end contact*/
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.footer span {
+    color: steelblue;
+    font-weight: bold;
+}
+/* end footer */
+
+
+/*Menu*/
+.headerA .links {
+    position: relative;
+}
+.headerA .links ul {
+    list-style: none;
+    margin: 0;
+    background-color: #f6f6f6;
+    position: absolute;
+    right: 0;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+    padding: 15px ;
+    position: absolute;
+    top: 27px;
+    
+}
+.headerA .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+.headerA .links:hover ul {
+    display: block;
+    transition: all .4s ease-in-out;
+    
+}
+.links ul li a {
+    display: block;
+    padding: 15px;
+    color: #333;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.links ul li a:hover {
+    padding-left: 25px;
+}
+.links ul li:not(:last-child) a {
+    border-bottom: 1px solid #ddd;
+}
+/*end menu*/
+
+
+@media(max-width: 767px){
+    .my_cards, .my_cities {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .distinaions .city {
+        width: 100%;
+        text-align: center;
+    }
+    .form{
+        margin: 0;
+    }
+    *{
+        margin: 0;
+    }
+}
+
+@media(max-width: 991px){
+    .my_cards, .my_cities {
+        flex-direction: column;
+        text-align: center;
+    }
+    .distinaions .city {
+        width: 100%;
+        text-align: center;
+    }
+}
+
